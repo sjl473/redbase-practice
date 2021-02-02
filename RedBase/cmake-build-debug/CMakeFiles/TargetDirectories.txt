@@ -1,0 +1,3 @@
+/Users/peter_the_greatest/CLionProjects/Redbase/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/peter_the_greatest/CLionProjects/Redbase/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/peter_the_greatest/CLionProjects/Redbase/cmake-build-debug/CMakeFiles/RedBase.dir
