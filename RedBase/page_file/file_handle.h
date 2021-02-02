@@ -25,6 +25,8 @@ public:
 
     bool AllocPage(PageHandle *page);
 
+    bool MarkDirty(int page_idx);
 
+};
 
 

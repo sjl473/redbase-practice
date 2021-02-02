@@ -13,7 +13,8 @@ int Buffer::GetPage(int fd, int page_idx, char **dst) {
     return 0;
 }
 
-int Buffer::GetAvailableNode(BufferNode *node) { // todo: 增加新函数 get available slot
+int Buffer::GetAvailableNode(BufferNode *node) {
+    // todo: 增加新函数 get available slot
     for (auto &i : *nodes_) {
         if (i->counter() == 0) {
             (*node).set_fd(i->fd());
@@ -92,12 +93,12 @@ int Buffer::EvictPageIfDirty(int fd, int page_idx, char *dst) {
 
 int Buffer::WriteToDisk(int fd, int page_idx, const char *src) {
     int offset =
-            (page_idx + 1) * test_buffer_node_.kPageSize;
+            (page_idx + 1) * test_buffer_node.kPageSize;
     if (lseek(fd, offset, SEEK_SET) < 0) {
         return -1;
     } else {
-        long rc = write(fd, src, static_cast<size_t>(test_buffer_node_.kPageSize));
-        if (rc != test_buffer_node_.kPageSize) {
+        long rc = write(fd, src, static_cast<size_t>(test_buffer_node.kPageSize));
+        if (rc != test_buffer_node.kPageSize) {
             return -1;
         }
         return 0;
@@ -106,7 +107,7 @@ int Buffer::WriteToDisk(int fd, int page_idx, const char *src) {
 
 int Buffer::ReadFromDisk(int fd, int page_idx, char *dst) {
     int offset =
-            (page_idx + 1) * test_buffer_node_.kPageSize;
+            (page_idx + 1) * test_buffer_node.kPageSize;
     // which means an offset is equal to ( pageNumber + 1 ) * 4k, include a
     // header's size
     if (lseek(fd, offset, SEEK_SET) < 0) {
@@ -114,8 +115,8 @@ int Buffer::ReadFromDisk(int fd, int page_idx, char *dst) {
     } else {
         long rc = read(
                 fd, dst,
-                static_cast<size_t>(test_buffer_node_.kPageSize)); // read from disk
-        if (rc != test_buffer_node_.kPageSize) {
+                static_cast<size_t>(test_buffer_node.kPageSize)); // read from disk
+        if (rc != test_buffer_node.kPageSize) {
             return -1; // todo : create a enum called pf incomplete write
         }
         return 0;
@@ -196,6 +197,18 @@ int Buffer::AllocPage(int fd, int page_idx, char **evictedData) {
         this->hash_table_->RemoveNode(fd, page_idx); // todo: 判断没加，。，。
         *evictedData = (*nodes_)[slot]->storage();
     }
+    return 0;
+}
+
+int Buffer::MarkDirty(int fd, int page_idx) {
+    int slot = this->hash_table_->SearchSlot(fd, page_idx);
+    if (slot < 0) {
+        return -1;
+    }
+    if ((*nodes_)[slot]->counter() == 0) {
+        return -1; // 不能将一个谁也没用的页设置为脏页
+    }
+    (*nodes_)[slot]->set_dirty(true);
     return 0;
 }
 

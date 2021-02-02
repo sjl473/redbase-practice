@@ -14,11 +14,12 @@ private:
     // buffer node class is "page" on implementation views
     unique_ptr<vector<unique_ptr<BufferNode>>> nodes_;
     // that is a designed problem
-    static BufferNode test_buffer_node_;
+public:
+    static BufferNode test_buffer_node;
 
 public:
     explicit Buffer() {
-        auto* hash_table = new HashTable();
+        auto *hash_table = new HashTable();
         hash_table_ = unique_ptr<HashTable>(hash_table);
     }
 
@@ -38,7 +39,9 @@ public:
 
     int ClearAllDirtyPages(int fd);
 
-    int AllocPage(int fd, int page_idx, char** evictedData);
+    int AllocPage(int fd, int page_idx, char **evictedData);
+
+    int MarkDirty(int fd, int page_idx);
 
 private:
     static int ReadFromDisk(int fd, int page_idx, char *dst);

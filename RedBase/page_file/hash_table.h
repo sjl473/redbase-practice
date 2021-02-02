@@ -13,7 +13,7 @@ private:
     inline static int CalHash(int fd, int page_idx);
 
 private:
-    unique_ptr<vector<unique_ptr<list<unique_ptr<HashTableNode>>>>> table_;
+    unique_ptr<vector<unique_ptr<list<unique_ptr<HashTableNode> > > > > table_;
 
 public:
     int SearchSlot(int fd, int page_idx);
