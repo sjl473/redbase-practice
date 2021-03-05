@@ -1,4 +1,4 @@
-# Install script for directory: /Users/peter_the_greatest/CLionProjects/Redbase
+# Install script for directory: /Users/peter_the_greatest/Downloads/RedBase
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/peter_the_greatest/CLionProjects/Redbase/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

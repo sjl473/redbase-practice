@@ -1,0 +1,18 @@
+//
+// Created by jinlai song on 2021/3/1.
+//
+
+#ifndef REDBASE_BUFFER_RC_H
+#define REDBASE_BUFFER_RC_H
+
+
+enum BufferRC {
+    BUFFER_OK,
+    NO_AVAILABLE_NODE,
+    UPDATE_HASH_TABLE_ERR,
+    READ_FROM_DISK_ERR,
+    WRITE_TO_DISK_ERR,
+    FAILED_TO_GET_PAGE,
+    FAIL_TO_FORCE_PAGE
+};
+#endif //REDBASE_BUFFER_RC_H

@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/peter_the_greatest/CLionProjects/Redbase
+CMAKE_SOURCE_DIR = /Users/peter_the_greatest/Downloads/RedBase
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/peter_the_greatest/CLionProjects/Redbase/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/peter_the_greatest/CLionProjects/Redbase/cmake-build-debug/CMakeFiles /Users/peter_the_greatest/CLionProjects/Redbase/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/peter_the_greatest/CLionProjects/Redbase/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -170,221 +170,86 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-page_file/buffer.o: page_file/buffer.cpp.o
+page_files/buffer.o: page_files/buffer.cpp.o
 
-.PHONY : page_file/buffer.o
-
-# target to build an object file
-page_file/buffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/buffer.cpp.o
-.PHONY : page_file/buffer.cpp.o
-
-page_file/buffer.i: page_file/buffer.cpp.i
-
-.PHONY : page_file/buffer.i
-
-# target to preprocess a source file
-page_file/buffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/buffer.cpp.i
-.PHONY : page_file/buffer.cpp.i
-
-page_file/buffer.s: page_file/buffer.cpp.s
-
-.PHONY : page_file/buffer.s
-
-# target to generate assembly for a file
-page_file/buffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/buffer.cpp.s
-.PHONY : page_file/buffer.cpp.s
-
-page_file/buffer_node.o: page_file/buffer_node.cpp.o
-
-.PHONY : page_file/buffer_node.o
+.PHONY : page_files/buffer.o
 
 # target to build an object file
-page_file/buffer_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/buffer_node.cpp.o
-.PHONY : page_file/buffer_node.cpp.o
+page_files/buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/buffer.cpp.o
+.PHONY : page_files/buffer.cpp.o
 
-page_file/buffer_node.i: page_file/buffer_node.cpp.i
+page_files/buffer.i: page_files/buffer.cpp.i
 
-.PHONY : page_file/buffer_node.i
+.PHONY : page_files/buffer.i
 
 # target to preprocess a source file
-page_file/buffer_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/buffer_node.cpp.i
-.PHONY : page_file/buffer_node.cpp.i
+page_files/buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/buffer.cpp.i
+.PHONY : page_files/buffer.cpp.i
 
-page_file/buffer_node.s: page_file/buffer_node.cpp.s
+page_files/buffer.s: page_files/buffer.cpp.s
 
-.PHONY : page_file/buffer_node.s
+.PHONY : page_files/buffer.s
 
 # target to generate assembly for a file
-page_file/buffer_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/buffer_node.cpp.s
-.PHONY : page_file/buffer_node.cpp.s
+page_files/buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/buffer.cpp.s
+.PHONY : page_files/buffer.cpp.s
 
-page_file/file_handle.o: page_file/file_handle.cpp.o
+page_files/buffer_node.o: page_files/buffer_node.cpp.o
 
-.PHONY : page_file/file_handle.o
+.PHONY : page_files/buffer_node.o
 
 # target to build an object file
-page_file/file_handle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/file_handle.cpp.o
-.PHONY : page_file/file_handle.cpp.o
+page_files/buffer_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o
+.PHONY : page_files/buffer_node.cpp.o
 
-page_file/file_handle.i: page_file/file_handle.cpp.i
+page_files/buffer_node.i: page_files/buffer_node.cpp.i
 
-.PHONY : page_file/file_handle.i
+.PHONY : page_files/buffer_node.i
 
 # target to preprocess a source file
-page_file/file_handle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/file_handle.cpp.i
-.PHONY : page_file/file_handle.cpp.i
+page_files/buffer_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.i
+.PHONY : page_files/buffer_node.cpp.i
 
-page_file/file_handle.s: page_file/file_handle.cpp.s
+page_files/buffer_node.s: page_files/buffer_node.cpp.s
 
-.PHONY : page_file/file_handle.s
+.PHONY : page_files/buffer_node.s
 
 # target to generate assembly for a file
-page_file/file_handle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/file_handle.cpp.s
-.PHONY : page_file/file_handle.cpp.s
+page_files/buffer_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.s
+.PHONY : page_files/buffer_node.cpp.s
 
-page_file/file_header.o: page_file/file_header.cpp.o
+page_files/hash_table.o: page_files/hash_table.cpp.o
 
-.PHONY : page_file/file_header.o
+.PHONY : page_files/hash_table.o
 
 # target to build an object file
-page_file/file_header.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/file_header.cpp.o
-.PHONY : page_file/file_header.cpp.o
+page_files/hash_table.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o
+.PHONY : page_files/hash_table.cpp.o
 
-page_file/file_header.i: page_file/file_header.cpp.i
+page_files/hash_table.i: page_files/hash_table.cpp.i
 
-.PHONY : page_file/file_header.i
-
-# target to preprocess a source file
-page_file/file_header.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/file_header.cpp.i
-.PHONY : page_file/file_header.cpp.i
-
-page_file/file_header.s: page_file/file_header.cpp.s
-
-.PHONY : page_file/file_header.s
-
-# target to generate assembly for a file
-page_file/file_header.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/file_header.cpp.s
-.PHONY : page_file/file_header.cpp.s
-
-page_file/hash_table.o: page_file/hash_table.cpp.o
-
-.PHONY : page_file/hash_table.o
-
-# target to build an object file
-page_file/hash_table.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/hash_table.cpp.o
-.PHONY : page_file/hash_table.cpp.o
-
-page_file/hash_table.i: page_file/hash_table.cpp.i
-
-.PHONY : page_file/hash_table.i
+.PHONY : page_files/hash_table.i
 
 # target to preprocess a source file
-page_file/hash_table.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/hash_table.cpp.i
-.PHONY : page_file/hash_table.cpp.i
+page_files/hash_table.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/hash_table.cpp.i
+.PHONY : page_files/hash_table.cpp.i
 
-page_file/hash_table.s: page_file/hash_table.cpp.s
+page_files/hash_table.s: page_files/hash_table.cpp.s
 
-.PHONY : page_file/hash_table.s
-
-# target to generate assembly for a file
-page_file/hash_table.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/hash_table.cpp.s
-.PHONY : page_file/hash_table.cpp.s
-
-page_file/hash_table_node.o: page_file/hash_table_node.cpp.o
-
-.PHONY : page_file/hash_table_node.o
-
-# target to build an object file
-page_file/hash_table_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/hash_table_node.cpp.o
-.PHONY : page_file/hash_table_node.cpp.o
-
-page_file/hash_table_node.i: page_file/hash_table_node.cpp.i
-
-.PHONY : page_file/hash_table_node.i
-
-# target to preprocess a source file
-page_file/hash_table_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/hash_table_node.cpp.i
-.PHONY : page_file/hash_table_node.cpp.i
-
-page_file/hash_table_node.s: page_file/hash_table_node.cpp.s
-
-.PHONY : page_file/hash_table_node.s
+.PHONY : page_files/hash_table.s
 
 # target to generate assembly for a file
-page_file/hash_table_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/hash_table_node.cpp.s
-.PHONY : page_file/hash_table_node.cpp.s
-
-page_file/page_handle.o: page_file/page_handle.cpp.o
-
-.PHONY : page_file/page_handle.o
-
-# target to build an object file
-page_file/page_handle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/page_handle.cpp.o
-.PHONY : page_file/page_handle.cpp.o
-
-page_file/page_handle.i: page_file/page_handle.cpp.i
-
-.PHONY : page_file/page_handle.i
-
-# target to preprocess a source file
-page_file/page_handle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/page_handle.cpp.i
-.PHONY : page_file/page_handle.cpp.i
-
-page_file/page_handle.s: page_file/page_handle.cpp.s
-
-.PHONY : page_file/page_handle.s
-
-# target to generate assembly for a file
-page_file/page_handle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/page_handle.cpp.s
-.PHONY : page_file/page_handle.cpp.s
-
-page_file/page_header.o: page_file/page_header.cpp.o
-
-.PHONY : page_file/page_header.o
-
-# target to build an object file
-page_file/page_header.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/page_header.cpp.o
-.PHONY : page_file/page_header.cpp.o
-
-page_file/page_header.i: page_file/page_header.cpp.i
-
-.PHONY : page_file/page_header.i
-
-# target to preprocess a source file
-page_file/page_header.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/page_header.cpp.i
-.PHONY : page_file/page_header.cpp.i
-
-page_file/page_header.s: page_file/page_header.cpp.s
-
-.PHONY : page_file/page_header.s
-
-# target to generate assembly for a file
-page_file/page_header.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_file/page_header.cpp.s
-.PHONY : page_file/page_header.cpp.s
+page_files/hash_table.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/hash_table.cpp.s
+.PHONY : page_files/hash_table.cpp.s
 
 # Help Target
 help:
@@ -398,30 +263,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... page_file/buffer.o"
-	@echo "... page_file/buffer.i"
-	@echo "... page_file/buffer.s"
-	@echo "... page_file/buffer_node.o"
-	@echo "... page_file/buffer_node.i"
-	@echo "... page_file/buffer_node.s"
-	@echo "... page_file/file_handle.o"
-	@echo "... page_file/file_handle.i"
-	@echo "... page_file/file_handle.s"
-	@echo "... page_file/file_header.o"
-	@echo "... page_file/file_header.i"
-	@echo "... page_file/file_header.s"
-	@echo "... page_file/hash_table.o"
-	@echo "... page_file/hash_table.i"
-	@echo "... page_file/hash_table.s"
-	@echo "... page_file/hash_table_node.o"
-	@echo "... page_file/hash_table_node.i"
-	@echo "... page_file/hash_table_node.s"
-	@echo "... page_file/page_handle.o"
-	@echo "... page_file/page_handle.i"
-	@echo "... page_file/page_handle.s"
-	@echo "... page_file/page_header.o"
-	@echo "... page_file/page_header.i"
-	@echo "... page_file/page_header.s"
+	@echo "... page_files/buffer.o"
+	@echo "... page_files/buffer.i"
+	@echo "... page_files/buffer.s"
+	@echo "... page_files/buffer_node.o"
+	@echo "... page_files/buffer_node.i"
+	@echo "... page_files/buffer_node.s"
+	@echo "... page_files/hash_table.o"
+	@echo "... page_files/hash_table.i"
+	@echo "... page_files/hash_table.s"
 .PHONY : help
 
 
