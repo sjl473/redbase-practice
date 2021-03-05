@@ -72,7 +72,8 @@ BufferRC Buffer::PinPage(int fd, int page_idx, int *found_slot) {
             return BufferRC::UPDATE_HASH_TABLE_ERR;
         }
         if (HashTableRC::REDUNDANT_KEY ==
-            this->hashTable_.InsertNode(const_cast<HashTableNode *>(new HashTableNode(fd, page_idx, free_slot)))) {
+            this->hashTable_.InsertNode(
+                    const_cast<const HashTableNode *>(new HashTableNode(fd, page_idx, free_slot)))) {
             return BufferRC::UPDATE_HASH_TABLE_ERR;
         }
         if (ReadFromDisk(free_fd, free_page_idx, this->nodes_[free_slot]->storage()) < 0) {
