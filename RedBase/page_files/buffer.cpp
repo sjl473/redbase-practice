@@ -79,7 +79,7 @@ BufferRC Buffer::PinPage(int fd, int page_idx, int *found_slot) {
             return BufferRC::READ_FROM_DISK_ERR;
         }
         this->nodes_[free_slot]->set_fd(fd);
-        this->nodes_[free_slot]->set_fd(fd);
+        this->nodes_[free_slot]->set_page_idx(page_idx);
         this->nodes_[free_slot]->set_counter(1);
         this->nodes_[free_slot]->set_dirty(false);
         return BufferRC::BUFFER_OK;
