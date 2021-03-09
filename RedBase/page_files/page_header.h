@@ -9,12 +9,16 @@
 
 class PageHeader {
 private:
-    int free_{};
+    int free_;
+
+    int size_;
 
 public:
-    explicit PageHeader(int free) : free_(free) {}
+    explicit PageHeader(int free, int size) : free_(free), size_(size) {}
 
     PageHeader() = default;
+
+    const static int kPFBeingUsed = -1;
 
 public:
     int free() const { return free_; }
@@ -26,6 +30,9 @@ public:
         this->free_ = free;
         return PageHeaderRC::PAGE_HEADER_RC_OK;
     }
+
+    int size() const { return size_; }
+
 };
 
 

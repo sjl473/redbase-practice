@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/peter_the_greatest/Downloads/RedBase
+CMAKE_SOURCE_DIR = /Users/peter_the_greatest/Downloads/redbase-practice/RedBase
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RedBase.dir/depend.make
@@ -79,62 +79,90 @@ include CMakeFiles/RedBase.dir/flags.make
 
 CMakeFiles/RedBase.dir/main.cpp.o: CMakeFiles/RedBase.dir/flags.make
 CMakeFiles/RedBase.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RedBase.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/main.cpp.o -c /Users/peter_the_greatest/Downloads/RedBase/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RedBase.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/main.cpp.o -c /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/main.cpp
 
 CMakeFiles/RedBase.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RedBase.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/RedBase/main.cpp > CMakeFiles/RedBase.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/main.cpp > CMakeFiles/RedBase.dir/main.cpp.i
 
 CMakeFiles/RedBase.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RedBase.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/RedBase/main.cpp -o CMakeFiles/RedBase.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/main.cpp -o CMakeFiles/RedBase.dir/main.cpp.s
 
 CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o: CMakeFiles/RedBase.dir/flags.make
 CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o: ../page_files/hash_table.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o -c /Users/peter_the_greatest/Downloads/RedBase/page_files/hash_table.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o -c /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/hash_table.cpp
 
 CMakeFiles/RedBase.dir/page_files/hash_table.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RedBase.dir/page_files/hash_table.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/RedBase/page_files/hash_table.cpp > CMakeFiles/RedBase.dir/page_files/hash_table.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/hash_table.cpp > CMakeFiles/RedBase.dir/page_files/hash_table.cpp.i
 
 CMakeFiles/RedBase.dir/page_files/hash_table.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RedBase.dir/page_files/hash_table.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/RedBase/page_files/hash_table.cpp -o CMakeFiles/RedBase.dir/page_files/hash_table.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/hash_table.cpp -o CMakeFiles/RedBase.dir/page_files/hash_table.cpp.s
 
 CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o: CMakeFiles/RedBase.dir/flags.make
 CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o: ../page_files/buffer_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o -c /Users/peter_the_greatest/Downloads/RedBase/page_files/buffer_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o -c /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer_node.cpp
 
 CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/RedBase/page_files/buffer_node.cpp > CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer_node.cpp > CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.i
 
 CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/RedBase/page_files/buffer_node.cpp -o CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer_node.cpp -o CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.s
 
 CMakeFiles/RedBase.dir/page_files/buffer.cpp.o: CMakeFiles/RedBase.dir/flags.make
 CMakeFiles/RedBase.dir/page_files/buffer.cpp.o: ../page_files/buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RedBase.dir/page_files/buffer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/buffer.cpp.o -c /Users/peter_the_greatest/Downloads/RedBase/page_files/buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RedBase.dir/page_files/buffer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/buffer.cpp.o -c /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer.cpp
 
 CMakeFiles/RedBase.dir/page_files/buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RedBase.dir/page_files/buffer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/RedBase/page_files/buffer.cpp > CMakeFiles/RedBase.dir/page_files/buffer.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer.cpp > CMakeFiles/RedBase.dir/page_files/buffer.cpp.i
 
 CMakeFiles/RedBase.dir/page_files/buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RedBase.dir/page_files/buffer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/RedBase/page_files/buffer.cpp -o CMakeFiles/RedBase.dir/page_files/buffer.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer.cpp -o CMakeFiles/RedBase.dir/page_files/buffer.cpp.s
+
+CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o: CMakeFiles/RedBase.dir/flags.make
+CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o: ../page_files/page_handle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o -c /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/page_handle.cpp
+
+CMakeFiles/RedBase.dir/page_files/page_handle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RedBase.dir/page_files/page_handle.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/page_handle.cpp > CMakeFiles/RedBase.dir/page_files/page_handle.cpp.i
+
+CMakeFiles/RedBase.dir/page_files/page_handle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RedBase.dir/page_files/page_handle.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/page_handle.cpp -o CMakeFiles/RedBase.dir/page_files/page_handle.cpp.s
+
+CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o: CMakeFiles/RedBase.dir/flags.make
+CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o: ../page_files/file_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o -c /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.cpp
+
+CMakeFiles/RedBase.dir/page_files/file_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RedBase.dir/page_files/file_handler.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.cpp > CMakeFiles/RedBase.dir/page_files/file_handler.cpp.i
+
+CMakeFiles/RedBase.dir/page_files/file_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RedBase.dir/page_files/file_handler.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.cpp -o CMakeFiles/RedBase.dir/page_files/file_handler.cpp.s
 
 # Object files for target RedBase
 RedBase_OBJECTS = \
 "CMakeFiles/RedBase.dir/main.cpp.o" \
 "CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o" \
 "CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o" \
-"CMakeFiles/RedBase.dir/page_files/buffer.cpp.o"
+"CMakeFiles/RedBase.dir/page_files/buffer.cpp.o" \
+"CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o" \
+"CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o"
 
 # External object files for target RedBase
 RedBase_EXTERNAL_OBJECTS =
@@ -143,9 +171,11 @@ RedBase: CMakeFiles/RedBase.dir/main.cpp.o
 RedBase: CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o
 RedBase: CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o
 RedBase: CMakeFiles/RedBase.dir/page_files/buffer.cpp.o
+RedBase: CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o
+RedBase: CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o
 RedBase: CMakeFiles/RedBase.dir/build.make
 RedBase: CMakeFiles/RedBase.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable RedBase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable RedBase"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RedBase.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +188,6 @@ CMakeFiles/RedBase.dir/clean:
 .PHONY : CMakeFiles/RedBase.dir/clean
 
 CMakeFiles/RedBase.dir/depend:
-	cd /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/peter_the_greatest/Downloads/RedBase /Users/peter_the_greatest/Downloads/RedBase /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles/RedBase.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/peter_the_greatest/Downloads/redbase-practice/RedBase /Users/peter_the_greatest/Downloads/redbase-practice/RedBase /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles/RedBase.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RedBase.dir/depend
 

@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/peter_the_greatest/Downloads/RedBase
+CMAKE_SOURCE_DIR = /Users/peter_the_greatest/Downloads/redbase-practice/RedBase
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -224,6 +224,33 @@ page_files/buffer_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.s
 .PHONY : page_files/buffer_node.cpp.s
 
+page_files/file_handler.o: page_files/file_handler.cpp.o
+
+.PHONY : page_files/file_handler.o
+
+# target to build an object file
+page_files/file_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o
+.PHONY : page_files/file_handler.cpp.o
+
+page_files/file_handler.i: page_files/file_handler.cpp.i
+
+.PHONY : page_files/file_handler.i
+
+# target to preprocess a source file
+page_files/file_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/file_handler.cpp.i
+.PHONY : page_files/file_handler.cpp.i
+
+page_files/file_handler.s: page_files/file_handler.cpp.s
+
+.PHONY : page_files/file_handler.s
+
+# target to generate assembly for a file
+page_files/file_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/file_handler.cpp.s
+.PHONY : page_files/file_handler.cpp.s
+
 page_files/hash_table.o: page_files/hash_table.cpp.o
 
 .PHONY : page_files/hash_table.o
@@ -251,6 +278,33 @@ page_files/hash_table.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/hash_table.cpp.s
 .PHONY : page_files/hash_table.cpp.s
 
+page_files/page_handle.o: page_files/page_handle.cpp.o
+
+.PHONY : page_files/page_handle.o
+
+# target to build an object file
+page_files/page_handle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o
+.PHONY : page_files/page_handle.cpp.o
+
+page_files/page_handle.i: page_files/page_handle.cpp.i
+
+.PHONY : page_files/page_handle.i
+
+# target to preprocess a source file
+page_files/page_handle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/page_handle.cpp.i
+.PHONY : page_files/page_handle.cpp.i
+
+page_files/page_handle.s: page_files/page_handle.cpp.s
+
+.PHONY : page_files/page_handle.s
+
+# target to generate assembly for a file
+page_files/page_handle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/page_handle.cpp.s
+.PHONY : page_files/page_handle.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -269,9 +323,15 @@ help:
 	@echo "... page_files/buffer_node.o"
 	@echo "... page_files/buffer_node.i"
 	@echo "... page_files/buffer_node.s"
+	@echo "... page_files/file_handler.o"
+	@echo "... page_files/file_handler.i"
+	@echo "... page_files/file_handler.s"
 	@echo "... page_files/hash_table.o"
 	@echo "... page_files/hash_table.i"
 	@echo "... page_files/hash_table.s"
+	@echo "... page_files/page_handle.o"
+	@echo "... page_files/page_handle.i"
+	@echo "... page_files/page_handle.s"
 .PHONY : help
 
 

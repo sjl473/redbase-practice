@@ -51,6 +51,8 @@ public:
 
     inline void increase_counter();
 
+    inline void set_page_idx(int page_idx);
+
 };
 
 #endif //REDBASE_BUFFER_NODE_H

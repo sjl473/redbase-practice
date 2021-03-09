@@ -32,8 +32,8 @@ BufferRC Buffer::WriteToDisk(int fd, int page_idx, const char *src) {
 }
 
 BufferRC Buffer::GetPage(int fd, int page_idx, char **dst) {
-    int founded_slot;
-    BufferRC rc = this->PinPage(fd, page_idx, &founded_slot);
+    int founded_slot = HashTable::CalHash(fd, page_idx);
+    BufferRC rc = this->PinPage(fd, page_idx);
     if (rc == BufferRC::NO_AVAILABLE_NODE || rc == BufferRC::BUFFER_OK) {
         *dst = this->nodes_[founded_slot]->storage();
         return BufferRC::BUFFER_OK;
@@ -41,11 +41,11 @@ BufferRC Buffer::GetPage(int fd, int page_idx, char **dst) {
     return BufferRC::FAILED_TO_GET_PAGE;
 }
 
-BufferRC Buffer::PinPage(int fd, int page_idx, int *found_slot) {
-
-    HashTableRC rc = this->hashTable_.SearchSlot(fd, page_idx, found_slot);
+BufferRC Buffer::PinPage(int fd, int page_idx) {
+    int found_slot;
+    HashTableRC rc = this->hashTable_.SearchSlot(fd, page_idx, &found_slot);
     if (rc == HashTableRC::HASH_TABLE_RC_OK) {
-        this->nodes_[*found_slot]->increase_counter();
+        this->nodes_[found_slot]->increase_counter();
         // increase pin count
         return BufferRC::BUFFER_OK;
     }
@@ -87,18 +87,66 @@ BufferRC Buffer::PinPage(int fd, int page_idx, int *found_slot) {
     // no return, all cases are involved
 }
 
-BufferRC Buffer::Force(int fd, int page_idx, char *dst) {
-
-    int founded_slot;
-    HashTableRC rc = this->hashTable_.SearchSlot(fd, page_idx, &founded_slot);
+BufferRC Buffer::Force(int fd, int page_idx) {
+    int found_slot;
+    HashTableRC rc = this->hashTable_.SearchSlot(fd, page_idx, &found_slot);
     if (rc == HashTableRC::HASH_TABLE_RC_OK) {
-        if (WriteToDisk(fd, page_idx, const_cast<const char *>(this->nodes_[founded_slot]->storage())) ==
-            BufferRC::WRITE_TO_DISK_ERR) {
-            return BufferRC::FAIL_TO_FORCE_PAGE;
+        if (this->nodes_[found_slot]->is_dirty()) {
+            if (WriteToDisk(fd, page_idx,
+                            const_cast<const char *>(this->nodes_[found_slot]->storage())) ==
+                BufferRC::WRITE_TO_DISK_ERR) {
+                return BufferRC::FAIL_TO_FORCE_PAGE;
+            }
+            this->nodes_[found_slot]->modify_dirty();
+            return BUFFER_OK;
         }
-        this->nodes_[founded_slot]->modify_dirty();
-        return BUFFER_OK;
     }
     return BufferRC::FAIL_TO_FORCE_PAGE;
+}
+
+BufferRC Buffer::UnpinPage(int fd, int page_idx) {
+    int found_slot;
+    HashTableRC rc = this->hashTable_.SearchSlot(fd, page_idx, &found_slot);
+    if (rc == HashTableRC::HASH_TABLE_RC_OK) {
+        if (this->nodes_[found_slot]->counter() == 0) {
+            if (this->nodes_[found_slot]->is_dirty()) {
+                if (WriteToDisk(fd, page_idx,
+                                const_cast<const char *>(this->nodes_[found_slot]->storage())) ==
+                    BufferRC::WRITE_TO_DISK_ERR) {
+                    return BufferRC::FAIL_TO_UNPIN_PAGE;
+                }
+            }
+        } else {
+            this->nodes_[found_slot]->decrease_counter();
+            return BufferRC::BUFFER_OK;
+        }
+    }
+    return BufferRC::FAIL_TO_UNPIN_PAGE;
+}
+
+BufferRC Buffer::MarkDirty(int fd, int page_idx) {
+    int found_slot;
+    HashTableRC rc = this->hashTable_.SearchSlot(fd, page_idx, &found_slot);
+    if(rc == HashTableRC::HASH_TABLE_RC_OK) {
+        if(!this->nodes_[found_slot]->is_dirty()) {
+            this->nodes_[found_slot]->modify_dirty();
+        }
+        return BufferRC::BUFFER_OK;
+    }
+    return BufferRC::FAIL_TO_MARK_DIRTY;
+}
+
+BufferRC Buffer::FetchMemory(int fd, int page_idx, char **dst) {
+    int found_slot;
+    HashTableRC rc = this->hashTable_.SearchSlot(fd, page_idx, &found_slot);
+    if(rc == HashTableRC::HASH_TABLE_RC_OK) {
+        *dst = this->nodes_[found_slot]->storage();
+        return BufferRC::BUFFER_OK;
+    }
+    return BufferRC::FAIL_TO_FETCH_MEMORY;
+}
+
+BufferRC Buffer::Alloc(int fd, int page_idx) {
+    return FAIL_TO_UNPIN_PAGE;
 }
 

@@ -58,6 +58,10 @@ void BufferNode::set_dirty(bool is_dirty) {
     this->is_dirty_ = is_dirty;
 }
 
+void BufferNode::set_page_idx(int page_idx) {
+    this->page_idx_ = page_idx;
+}
+
 
 
 

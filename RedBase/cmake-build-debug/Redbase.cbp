@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug"/>
+				<Option working_dir="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug"/>
+				<Option working_dir="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug"/>
+				<Option working_dir="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RedBase">
-				<Option output="/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/RedBase" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug"/>
+				<Option output="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/RedBase" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 RedBase"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 RedBase"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RedBase/fast">
-				<Option output="/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/RedBase" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug"/>
+				<Option output="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/RedBase" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,53 +73,68 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 RedBase/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 RedBase/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/main.cpp">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/main.cpp">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/buffer.cpp">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer.cpp">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/buffer.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/buffer_node.cpp">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer_node.cpp">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/buffer_node.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer_node.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/buffer_node_rc.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer_node_rc.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/buffer_rc.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer_rc.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/hash_table.cpp">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.cpp">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/hash_table.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/hash_table_node.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler_rc.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/hash_table_rc.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/hash_table.cpp">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/page_header.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/hash_table.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/page_files/page_header_rc.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/hash_table_node.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/RedBase/CMakeLists.txt">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/hash_table_rc.h">
+			<Option target="RedBase"/>
+		</Unit>
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/page_handle.cpp">
+			<Option target="RedBase"/>
+		</Unit>
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/page_handle.h">
+			<Option target="RedBase"/>
+		</Unit>
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/page_header.h">
+			<Option target="RedBase"/>
+		</Unit>
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/page_header_rc.h">
+			<Option target="RedBase"/>
+		</Unit>
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

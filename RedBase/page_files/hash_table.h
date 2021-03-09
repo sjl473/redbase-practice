@@ -16,7 +16,7 @@ using namespace std;
 class HashTable {
 public:
     const static int kHashTableInitCapacity = 20;
-private:
+public:
     inline static int CalHash(int fd, int page_idx);
 
 private:
@@ -32,8 +32,6 @@ public:
     HashTableRC InsertNode(const HashTableNode *node);
 
     HashTableRC DeleteNode(int fd, int page_idx);
-
-    HashTableRC SearchSlots(int fd, int page_idx, vector<int>* slots);
 };
 
 #endif //REDBASE_HASH_TABLE_H

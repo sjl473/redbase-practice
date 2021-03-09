@@ -27,7 +27,9 @@ public:
         free_ = 0;
     }
 
-    BufferRC PinPage(int fd, int page_idx, int *found_slot);
+    BufferRC UnpinPage(int fd, int page_idx);
+
+    BufferRC PinPage(int fd, int page_idx);
 
     BufferRC GetPage(int fd, int page_idx, char **dst);
 
@@ -35,7 +37,13 @@ public:
 
     static BufferRC WriteToDisk(int fd, int page_idx, const char *src);
 
-    BufferRC Force(int fd, int page_dix, char* dst);
+    BufferRC Force(int fd, int page_dix);
+
+    BufferRC MarkDirty(int fd, int page_idx);
+
+    BufferRC FetchMemory(int fd, int page_idx, char** dst);
+
+    BufferRC Alloc(int fd, int page_idx);
 };
 
 
