@@ -33,7 +33,7 @@ public:
 
     BufferRC GetPage(int fd, int page_idx, char **dst);
 
-    static BufferRC ReadFromDisk(int fd, int page_idx, char *dst);
+    static BufferRC ReadFromDisk(int fd, int page_idx, char **dst);
 
     static BufferRC WriteToDisk(int fd, int page_idx, const char *src);
 

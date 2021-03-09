@@ -101,13 +101,13 @@
 		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer_rc.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.cpp">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handle.cpp">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handle.h">
 			<Option target="RedBase"/>
 		</Unit>
-		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler_rc.h">
+		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handle_rc.h">
 			<Option target="RedBase"/>
 		</Unit>
 		<Unit filename="/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/hash_table.cpp">

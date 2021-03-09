@@ -27,6 +27,10 @@ public:
 
     inline int page_idx();
 
+    inline void set_page_idx(int page_idx);
+
+    inline void set_content(char* content);
+
     inline bool is_dirty();
 
     inline const char *content();
@@ -37,19 +41,3 @@ public:
 
 #endif //REDBASE_PAGE_HANDLE_H
 
-//PFPageHandle(const PFPageHandle& rhs);
-//PFPageHandle& operator=(const PFPageHandle &page);
-//
-////
-//// rawPtr - 获取指向实际内容的裸指针
-////
-//Ptr rawPtr() { return addr_; }
-//Page page() { return num_; }
-//void setOwner(shared_ptr<PFFileHandle> file) { pffile_ = file; }
-//void setDirty();
-//void dispose();		// 销毁所在的页
-//private:
-//bool dirty_;
-//weak_ptr<PFFileHandle> pffile_;	// 弱引用是有必要的
-//Page num_;						// 页面的编号
-//Ptr addr_;						// 指向实际的页面数据

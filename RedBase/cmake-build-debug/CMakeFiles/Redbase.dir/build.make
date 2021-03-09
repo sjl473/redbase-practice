@@ -142,18 +142,18 @@ CMakeFiles/RedBase.dir/page_files/page_handle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RedBase.dir/page_files/page_handle.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/page_handle.cpp -o CMakeFiles/RedBase.dir/page_files/page_handle.cpp.s
 
-CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o: CMakeFiles/RedBase.dir/flags.make
-CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o: ../page_files/file_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o -c /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.cpp
+CMakeFiles/RedBase.dir/page_files/file_handle.cpp.o: CMakeFiles/RedBase.dir/flags.make
+CMakeFiles/RedBase.dir/page_files/file_handle.cpp.o: ../page_files/file_handle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RedBase.dir/page_files/file_handle.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RedBase.dir/page_files/file_handle.cpp.o -c /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handle.cpp
 
-CMakeFiles/RedBase.dir/page_files/file_handler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RedBase.dir/page_files/file_handler.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.cpp > CMakeFiles/RedBase.dir/page_files/file_handler.cpp.i
+CMakeFiles/RedBase.dir/page_files/file_handle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RedBase.dir/page_files/file_handle.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handle.cpp > CMakeFiles/RedBase.dir/page_files/file_handle.cpp.i
 
-CMakeFiles/RedBase.dir/page_files/file_handler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RedBase.dir/page_files/file_handler.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.cpp -o CMakeFiles/RedBase.dir/page_files/file_handler.cpp.s
+CMakeFiles/RedBase.dir/page_files/file_handle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RedBase.dir/page_files/file_handle.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handle.cpp -o CMakeFiles/RedBase.dir/page_files/file_handle.cpp.s
 
 # Object files for target RedBase
 RedBase_OBJECTS = \
@@ -162,7 +162,7 @@ RedBase_OBJECTS = \
 "CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o" \
 "CMakeFiles/RedBase.dir/page_files/buffer.cpp.o" \
 "CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o" \
-"CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o"
+"CMakeFiles/RedBase.dir/page_files/file_handle.cpp.o"
 
 # External object files for target RedBase
 RedBase_EXTERNAL_OBJECTS =
@@ -172,7 +172,7 @@ RedBase: CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o
 RedBase: CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o
 RedBase: CMakeFiles/RedBase.dir/page_files/buffer.cpp.o
 RedBase: CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o
-RedBase: CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o
+RedBase: CMakeFiles/RedBase.dir/page_files/file_handle.cpp.o
 RedBase: CMakeFiles/RedBase.dir/build.make
 RedBase: CMakeFiles/RedBase.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable RedBase"

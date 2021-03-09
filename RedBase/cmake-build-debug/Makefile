@@ -224,32 +224,32 @@ page_files/buffer_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.s
 .PHONY : page_files/buffer_node.cpp.s
 
-page_files/file_handler.o: page_files/file_handler.cpp.o
+page_files/file_handle.o: page_files/file_handle.cpp.o
 
-.PHONY : page_files/file_handler.o
+.PHONY : page_files/file_handle.o
 
 # target to build an object file
-page_files/file_handler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o
-.PHONY : page_files/file_handler.cpp.o
+page_files/file_handle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/file_handle.cpp.o
+.PHONY : page_files/file_handle.cpp.o
 
-page_files/file_handler.i: page_files/file_handler.cpp.i
+page_files/file_handle.i: page_files/file_handle.cpp.i
 
-.PHONY : page_files/file_handler.i
+.PHONY : page_files/file_handle.i
 
 # target to preprocess a source file
-page_files/file_handler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/file_handler.cpp.i
-.PHONY : page_files/file_handler.cpp.i
+page_files/file_handle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/file_handle.cpp.i
+.PHONY : page_files/file_handle.cpp.i
 
-page_files/file_handler.s: page_files/file_handler.cpp.s
+page_files/file_handle.s: page_files/file_handle.cpp.s
 
-.PHONY : page_files/file_handler.s
+.PHONY : page_files/file_handle.s
 
 # target to generate assembly for a file
-page_files/file_handler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/file_handler.cpp.s
-.PHONY : page_files/file_handler.cpp.s
+page_files/file_handle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RedBase.dir/build.make CMakeFiles/RedBase.dir/page_files/file_handle.cpp.s
+.PHONY : page_files/file_handle.cpp.s
 
 page_files/hash_table.o: page_files/hash_table.cpp.o
 
@@ -323,9 +323,9 @@ help:
 	@echo "... page_files/buffer_node.o"
 	@echo "... page_files/buffer_node.i"
 	@echo "... page_files/buffer_node.s"
-	@echo "... page_files/file_handler.o"
-	@echo "... page_files/file_handler.i"
-	@echo "... page_files/file_handler.s"
+	@echo "... page_files/file_handle.o"
+	@echo "... page_files/file_handle.i"
+	@echo "... page_files/file_handle.s"
 	@echo "... page_files/hash_table.o"
 	@echo "... page_files/hash_table.i"
 	@echo "... page_files/hash_table.s"

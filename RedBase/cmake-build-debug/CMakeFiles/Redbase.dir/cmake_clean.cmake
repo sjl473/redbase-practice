@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RedBase.dir/main.cpp.o"
   "CMakeFiles/RedBase.dir/page_files/buffer.cpp.o"
   "CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o"
-  "CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o"
+  "CMakeFiles/RedBase.dir/page_files/file_handle.cpp.o"
   "CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o"
   "CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o"
   "RedBase"

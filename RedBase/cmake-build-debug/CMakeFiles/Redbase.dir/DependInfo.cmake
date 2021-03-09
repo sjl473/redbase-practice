@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/main.cpp" "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles/RedBase.dir/main.cpp.o"
   "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer.cpp" "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles/RedBase.dir/page_files/buffer.cpp.o"
   "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/buffer_node.cpp" "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles/RedBase.dir/page_files/buffer_node.cpp.o"
-  "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handler.cpp" "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles/RedBase.dir/page_files/file_handler.cpp.o"
+  "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/file_handle.cpp" "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles/RedBase.dir/page_files/file_handle.cpp.o"
   "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/hash_table.cpp" "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles/RedBase.dir/page_files/hash_table.cpp.o"
   "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/page_files/page_handle.cpp" "/Users/peter_the_greatest/Downloads/redbase-practice/RedBase/cmake-build-debug/CMakeFiles/RedBase.dir/page_files/page_handle.cpp.o"
   )

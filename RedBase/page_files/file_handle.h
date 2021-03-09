@@ -2,11 +2,11 @@
 // Created by jinlai song on 2021/3/9.
 //
 
-#ifndef REDBASE_FILE_HANDLER_H
-#define REDBASE_FILE_HANDLER_H
+#ifndef REDBASE_FILE_HANDLE_H
+#define REDBASE_FILE_HANDLE_H
 
 #include "buffer.h"
-#include "file_handler_rc.h"
+#include "file_handle_rc.h"
 #include "page_handle.h"
 
 class FileHandler {
@@ -26,4 +26,4 @@ public:
 };
 
 
-#endif //REDBASE_FILE_HANDLER_H
+#endif //REDBASE_FILE_HANDLE_H

@@ -41,7 +41,7 @@ public:
 
     inline void set_fd(int fd);
 
-    inline BufferNodeRC set_counter(int counter);
+    inline BufferNodeRC set_counter(int count);
 
     inline void set_dirty(bool is_dirty);
 

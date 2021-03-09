@@ -7,6 +7,8 @@
 
 #include "page_header_rc.h"
 
+const static int kPFBeingUsed = -1;
+
 class PageHeader {
 private:
     int free_;
@@ -18,7 +20,6 @@ public:
 
     PageHeader() = default;
 
-    const static int kPFBeingUsed = -1;
 
 public:
     int free() const { return free_; }

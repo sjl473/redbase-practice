@@ -5,14 +5,14 @@
 #include "buffer.h"
 
 
-BufferRC Buffer::ReadFromDisk(int fd, int page_idx, char *dst) {
+BufferRC Buffer::ReadFromDisk(int fd, int page_idx, char **dst) {
     int offset = (page_idx + 1) * BufferNode::kPageSize;
     // which means an offset is equal to ( pageNumber + 1 ) * 4k, include a
     // header's size
     if (lseek(fd, offset, SEEK_SET) < 0) {
         return BufferRC::READ_FROM_DISK_ERR;
     }
-    long rc = read(fd, dst, static_cast<size_t>(BufferNode::kPageSize));
+    long rc = read(fd, *dst, static_cast<size_t>(BufferNode::kPageSize));
     if (rc != BufferNode::kPageSize) {
         return BufferRC::READ_FROM_DISK_ERR;
     }
@@ -75,7 +75,8 @@ BufferRC Buffer::PinPage(int fd, int page_idx) {
             this->hashTable_.InsertNode(const_cast<HashTableNode *>(new HashTableNode(fd, page_idx, free_slot)))) {
             return BufferRC::UPDATE_HASH_TABLE_ERR;
         }
-        if (ReadFromDisk(free_fd, free_page_idx, this->nodes_[free_slot]->storage()) < 0) {
+        char* dst = this->nodes_[free_slot]->storage();
+        if (ReadFromDisk(free_fd, free_page_idx, &dst) < 0) {
             return BufferRC::READ_FROM_DISK_ERR;
         }
         this->nodes_[free_slot]->set_fd(fd);

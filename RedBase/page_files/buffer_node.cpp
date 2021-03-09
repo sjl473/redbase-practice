@@ -41,18 +41,17 @@ char *BufferNode::storage() {
 
 BufferNode::BufferNode() = default;
 
-BufferNodeRC BufferNode::set_counter(int counter) {
-    if (counter < 0) {
+BufferNodeRC BufferNode::set_counter(int count) {
+    if (count < 0) {
         return BufferNodeRC::INVALID_COUNTER_SETTINGS;
     }
-    this->counter_ = counter_;
+    this->counter_ = count;
     return BufferNodeRC::BUFFER_NODE_RC_OK;
 }
 
 void BufferNode::set_fd(int fd) {
     this->fd_ = fd;
 }
-
 
 void BufferNode::set_dirty(bool is_dirty) {
     this->is_dirty_ = is_dirty;
