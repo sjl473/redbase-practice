@@ -29,13 +29,13 @@ public:
 
     BufferNode();
 
-    [[nodiscard]] inline bool is_dirty() const;
+    inline bool is_dirty() const;
 
-    [[nodiscard]] inline int counter() const;
+    inline int counter() const;
 
-    [[nodiscard]] inline int fd() const;
+    inline int fd() const;
 
-    [[nodiscard]] inline int page_idx() const;
+    inline int page_idx() const;
 
     inline char *storage();
 

@@ -24,9 +24,6 @@ const char *PageHandle::content() {
     return nullptr;
 }
 
-bool PageHandle::is_file_handle_expired() {
-    return 0;
-}
 
 void PageHandle::set_page_idx(int page_idx) {
     ;
