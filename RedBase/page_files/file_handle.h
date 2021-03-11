@@ -31,7 +31,7 @@ public:
 
     FileHandleRC FirstPage(PageHandle* page_handle);
 
-    FileHandleRC NextPage(PageHandle* page_handle);
+    FileHandleRC NextPage(int curr_page_idx, PageHandle* page_handle);
 
     FileHandleRC PrevPage(int curr_page_idx, PageHandle* page_handle);
 
